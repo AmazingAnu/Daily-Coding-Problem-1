@@ -20,7 +20,7 @@ public class LowestPositiveIntegerNotInArray {
         System.out.println(getLowestPositiveInteger(arr));
     }
 
-    private static int getLowestPositiveInteger(int[] arr) {
+    private static int getLowestPositiveIntegerOld(int[] arr) {
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
 
@@ -32,12 +32,39 @@ public class LowestPositiveIntegerNotInArray {
             set.add(num);
         }
 
-        while (min++ <= max) {
-            if (set.contains(min) == false && min > 0) {
-                return min;
+        int temp = 1;
+
+        while (temp <= max) {
+            if (set.contains(temp) == false && temp > 0) {
+                return temp;
+            }
+
+            temp++;
+        }
+
+        return max + 1 == 0 ? 1 : max+1;
+    }
+    
+    private static int getLowestPositiveInteger(int[] arr) {
+        int n = arr.length;
+
+        for (int i = 0; i < n; ++i)  {
+            int num = arr[i];
+            while (num <= n && num > 0 && arr[num - 1] != num) {
+                int temp = arr[num-1];
+                arr[num-1] = arr[i];
+                arr[i] = temp;
+
+                num = arr[i];
             }
         }
 
-        return max + 1;
+        for (int i = 0; i < n; ++i) {
+            if (arr[i] != i + 1) {
+                return i + 1;
+            }
+        }
+
+        return n + 1;
     }
 }
