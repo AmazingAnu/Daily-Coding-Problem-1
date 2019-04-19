@@ -12,12 +12,47 @@
 * The sentence must end with a terminal mark immediately following a word.
 * */
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class SentenceChecker {
 
     public static List<String> sentenceCheckerImpl(char[] characters) {
-        return new ArrayList<>();
+        List<String> list = new ArrayList<>();
+        Set<Character> separator = new HashSet<>(Arrays.asList(',', ';', ':'));
+        Set<Character> terminal = new HashSet<>(Arrays.asList('.', '?', '!', '‽'));
+
+        StringBuilder sb = new StringBuilder();
+        for (char character : characters) {
+            if (separator.contains(character)) {
+                if (sb.length() == 0) {
+                    continue;
+                }
+
+                sb.append(character);
+            } else if (terminal.contains(character)) {
+                if (sb.length() > 0) {
+                    sb.append(character);
+                    list.add(sb.toString());
+
+                    sb.setLength(0);
+                }
+            } else {
+                if (Character.isUpperCase(character)) {
+                    if (sb.length() != 0) {
+                        sb.setLength(0);
+                    }
+
+                    sb.append(character);
+                } else {
+                    if (sb.length() == 0) {
+                        continue;
+                    }
+
+                    sb.append(character);
+                }
+            }
+        }
+
+        return list;
     }
 }
