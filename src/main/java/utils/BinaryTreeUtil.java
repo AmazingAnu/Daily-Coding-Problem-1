@@ -1,6 +1,8 @@
 package utils;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class BinaryTreeUtil {
@@ -24,20 +26,23 @@ public class BinaryTreeUtil {
         return node;
     }
 
-    public static void printLevelOrderTraversal(TreeNode root) {
+    public static List<List<Integer>> printLevelOrderTraversal(TreeNode root) {
         if (root == null) {
-            return;
+            return new ArrayList<>();
         }
 
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
 
+        List<List<Integer>> traversal = new ArrayList<>();
+
         while (!queue.isEmpty()) {
             int size = queue.size();
+            List<Integer> list = new ArrayList<>();
 
             while (size-- > 0) {
                 TreeNode popped = queue.remove();
-                System.out.print(popped.val + " ");
+                list.add(popped.val);
 
                 if (popped.left != null) {
                     queue.add(popped.left);
@@ -47,8 +52,9 @@ public class BinaryTreeUtil {
                     queue.add(popped.right);
                 }
             }
-
-            System.out.println();
+            traversal.add(list);
         }
+
+        return traversal;
     }
 }

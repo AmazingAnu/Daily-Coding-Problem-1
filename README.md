@@ -13,3 +13,4 @@ S.no | Problem | Solution |
 8 | Binary Tree Boustrophedon Order | [BinaryTreeBoustrophedonOrder.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/BinaryTreeBoustrophedonOrder.java) | 
 9 | Sentence Checker | [SentenceChecker.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/SentenceChecker.java) | 
 10 | Get Alternating Linked List Order | [GetAlternatingLinkedListOrder.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/GetAlternatingLinkedListOrder.java) | 
+11 | Serialize & Deserialize A Binary Tree | [SerializeDeserializeTree.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/SerializeDeserializeTree.java) | 
