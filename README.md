@@ -14,3 +14,4 @@ S.no | Problem | Solution |
 9 | Sentence Checker | [SentenceChecker.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/SentenceChecker.java) | 
 10 | Get Alternating Linked List Order | [GetAlternatingLinkedListOrder.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/GetAlternatingLinkedListOrder.java) | 
 11 | Serialize & Deserialize A Binary Tree | [SerializeDeserializeTree.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/SerializeDeserializeTree.java) | 
+12 | Find first missing positive integer | [FindFirstMissingPositiveInteger.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/FindFirstMissingPositiveInteger.java) | 
