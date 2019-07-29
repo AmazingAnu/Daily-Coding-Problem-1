@@ -16,4 +16,5 @@ S.no | Problem | Solution |
 11 | Serialize & Deserialize A Binary Tree | [SerializeDeserializeTree.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/SerializeDeserializeTree.java) | 
 12 | Find first missing positive integer | [FindFirstMissingPositiveInteger.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/FindFirstMissingPositiveInteger.java) | 
 13 | Longest Substring Without Repeating Characters | [LongestSubstringWithoutRepeatingCharacter.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/LongestSubstringWithoutRepeatingCharacter.java) | 
-14 | Longest Palindromic Substring | [LongestPalindromicSubstring.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/LongestPalindromicSubstring.java) | 
+14 | Longest Palindromic Substring | [LongestPalindromicSubstring.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/LongestPalindromicSubstring.java) |
+15 | Validate Balanced Parentheses | [ValidateBalancedParentheses.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/ValidateBalancedParentheses.java) |  
