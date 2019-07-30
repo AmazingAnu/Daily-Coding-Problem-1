@@ -1,5 +1,5 @@
 # Daily-Coding-Problem
-## Solutions in Java for programming interview problems from [Daily Coding Problem](https://www.dailycodingproblem.com)
+## Solving 1 interview coding problem everyday
 
 S.no | Problem | Solution | 
 --- | --- | --- |
@@ -18,3 +18,4 @@ S.no | Problem | Solution |
 13 | Longest Substring Without Repeating Characters | [LongestSubstringWithoutRepeatingCharacter.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/LongestSubstringWithoutRepeatingCharacter.java) | 
 14 | Longest Palindromic Substring | [LongestPalindromicSubstring.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/LongestPalindromicSubstring.java) |
 15 | Validate Balanced Parentheses | [ValidateBalancedParentheses.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/ValidateBalancedParentheses.java) |  
+16 | First and Last Indices of an Element in a Sorted Array | [FirstAndLastIndexOfElementInSortedArray.java](https://github.com/varunu28/Daily-Coding-Problem/blob/master/src/main/java/FirstAndLastIndexOfElementInSortedArray.java) |  
